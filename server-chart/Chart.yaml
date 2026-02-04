@@ -1,0 +1,6 @@
+apiVersion: v2
+name: server-chart
+description: Deploys NGINX server container on KubeEdge edge node (hostNetwork)
+type: application
+version: 0.1.0
+appVersion: "1.25"

@@ -1,0 +1,12 @@
+image:
+  repository: nginx
+  tag: alpine
+  pullPolicy: IfNotPresent
+
+nodeSelector:
+  node-role.kubernetes.io/edge: ""
+
+replicaCount: 1
+
+# hostNetwork: mimics NodePort; access at http://<edge-node-ip>:80
+hostNetwork: true
